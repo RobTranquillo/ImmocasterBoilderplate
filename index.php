@@ -14,6 +14,8 @@ $oImmocaster->setRequestUrl( $sWorkingSpace );
 
 // database connect
 $oImmocaster->setDataStorage($aDatabase);
+
+// authorize
 if(isset($_GET['main_registration'])||isset($_GET['state']))
 {
 	$aParameter = array( 'callback_url'=>$sCallbackURL, 'verifyApplication'=>true );
